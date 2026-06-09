@@ -41,11 +41,7 @@ namespace DemoForms.Forms
         {
             if (SessionManager.CurrentUser == null)
             {
-                lblUser.Text =
-       SessionManager.CurrentUser.FullName
-       + " ("
-       + SessionManager.CurrentUser.Role.Name
-       + ")";
+                lblUser.Text = "Гость";
 
                 btnOrders.Visible = false;
 

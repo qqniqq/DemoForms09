@@ -34,6 +34,7 @@
         }
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
@@ -138,6 +139,7 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnGuest);
             this.Controls.Add(this.btnExit);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
